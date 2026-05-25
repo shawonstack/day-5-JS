@@ -39,12 +39,31 @@ while (numbers <= 10) {
 // DO while loop
 let foodPrice = 1;
 do {
-  console.log('*');
+  // console.log('*');
   foodPrice++;
 } while (foodPrice <= 10);
 
 // for off loop
 
 for (let h = 1; h <= 10; h -= -1) {
-  console.log(h);
+  // console.log(h);
+}
+
+let arrays = ['shawon', 'hasan', 'jakir', 'suvo', 'nabil', 'jihad', 'nayeem'];
+for (let i = 0; i < arrays.length; i++) {
+  // console.log(arrays[i]);
+}
+let array = ['shawon', 'hasan', 'jakir', 'suvo', 'nabil', 'jihad', 'nayeem'];
+
+for (let i = arrays.length - 1; i >= 0; i--) {
+  // console.log(array[i]);
+}
+
+const collectors = [12, 2, 3, 4, 56, 7, 2];
+for (const colelct of collectors) {
+  // console.log(colelct);
+}
+const totalArray = ['5', '7', '9', '12', '34', '77'];
+for (const total of totalArray) {
+  console.log(total);
 }
