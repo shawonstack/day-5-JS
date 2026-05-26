@@ -60,4 +60,5 @@ let total = 0;
 for (let i = 0; i < price.length; i++) {
   total += price[i];
   console.log('total pice is :', total);
+  console.log('price will be:', price);
 }
