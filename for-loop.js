@@ -45,6 +45,19 @@ for (let bucket = 1; bucket <= 3; bucket++) {
 // console.log(i);
 // }
 const post = ['post1', 'post2', 'post3'];
-for (let i = 0; i <= post.length; i++) {
-  console.log(post[i]);
+for (let i = 0; i < post.length; i++) {
+  // console.log(post[i]);
+}
+// snding email
+const emails = ['email1', 'email2', 'email3', 'email4'];
+for (let i = 0; i < emails.length; i++) {
+  // console.log('sending emial is :', emails[i]);
+}
+
+// case study 3: ecommerce releted
+const price = [100, 200, 300, 700, 600];
+let total = 0;
+for (let i = 0; i < price.length; i++) {
+  total += price[i];
+  console.log('total pice is :', total);
 }
