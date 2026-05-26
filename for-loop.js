@@ -22,5 +22,29 @@ for (let i = 1; i <= 3; i++) {
   }
 }
 for (let i = 0, j = 10; i <= 10; i++, j--) {
-  console.log(i, j);
+  // console.log(i, j);
+}
+
+for (let classroom = 1; classroom <= 3; classroom++) {
+  // console.log('classroome is:', classroom);
+  for (let student = 1; student <= 5; student++) {
+    // console.log('total istudent is : ', student);
+  }
+}
+for (let bucket = 1; bucket <= 3; bucket++) {
+  // console.log('total bucket is:', bucket);
+  for (let apple = 1; apple <= 5; apple++) {
+    // console.log('total apple of the buket is:', apple);
+  }
+}
+// multiple variable loop
+// for (let i = 0, j = 10; i <= 10; i++, j--) {
+// console.log(i, j);
+// }
+// for (let i = 0; i < array.length; i++) {
+// console.log(i);
+// }
+const post = ['post1', 'post2', 'post3'];
+for (let i = 0; i <= post.length; i++) {
+  console.log(post[i]);
 }
