@@ -44,7 +44,9 @@
 // }
 //-----------------------task1
 let i = 1;
-while (i <= 20) {
-  console.log('number of i is: ', i);
+let sum = 0;
+while (i <= 10) {
+  sum = sum + i;
   i++;
+  console.log(sum);
 }
