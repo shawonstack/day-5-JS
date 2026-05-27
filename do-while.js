@@ -45,18 +45,49 @@
 // } else {
 //   console.log('Card Blocked');
 // }
-let choice = 1;
-do {
-  console.log('play');
-  console.log('seetings');
-  console.log('exit');
+// let choice = 1;
+// do {
+//   console.log('play');
+//   console.log('seetings');
+//   console.log('exit');
 
-  if (choice == 1) {
-    console.log('play');
-  } else if (choice == 2) {
-    console.log('seetings');
-  } else if (choice == 3) {
-    console.log('exit');
+//   if (choice == 1) {
+//     console.log('play');
+//   } else if (choice == 2) {
+//     console.log('seetings');
+//   } else if (choice == 3) {
+//     console.log('exit');
+//   }
+//   choice++;
+// } while (choice < 3);
+
+// numebr guessing
+// let user = 1;
+// let secret = 7;
+// do {
+//   if (user == secret) {
+//     console.log('correcct number');
+//   } else {
+//     console.log('wrong number');
+//   }
+//   user++;
+// } while (user < 10);
+let correctPassword = 1234;
+let userInput = 1111;
+
+let attempt = 1;
+
+do {
+  if (userInput == correctPassword) {
+    console.log('Login successful');
+    break;
+  } else {
+    console.log('Wrong password');
   }
-  choice++;
-} while (choice < 3);
+
+  attempt++;
+} while (attempt <= 5);
+
+if (attempt > 5) {
+  console.log('Account blocked');
+}
