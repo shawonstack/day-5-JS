@@ -24,24 +24,39 @@
 //   attempt++;
 // } while (!success && attempt <= 5);
 //------- 3 bar wrong pin dile block
-const readline = require('readline-sync');
+// const readline = require('readline-sync');
 
-let pin = 1234;
-let attempt = 0;
-let input;
+// let pin = 1234;
+// let attempt = 0;
+// let input;
 
+// do {
+//   input = Number(readline.question('Enter Your PIN: '));
+
+//   if (input !== pin) {
+//     console.log('Wrong PIN');
+//   }
+
+//   attempt++;
+// } while (input !== pin && attempt < 3);
+
+// if (input === pin) {
+//   console.log('Login Success');
+// } else {
+//   console.log('Card Blocked');
+// }
+let choice = 1;
 do {
-  input = Number(readline.question('Enter Your PIN: '));
+  console.log('play');
+  console.log('seetings');
+  console.log('exit');
 
-  if (input !== pin) {
-    console.log('Wrong PIN');
+  if (choice == 1) {
+    console.log('play');
+  } else if (choice == 2) {
+    console.log('seetings');
+  } else if (choice == 3) {
+    console.log('exit');
   }
-
-  attempt++;
-} while (input !== pin && attempt < 3);
-
-if (input === pin) {
-  console.log('Login Success');
-} else {
-  console.log('Card Blocked');
-}
+  choice++;
+} while (choice < 3);
