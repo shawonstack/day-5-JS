@@ -17,8 +17,31 @@
 // } while (input !== password);
 
 // console.log('Login Success');
-let health = 3;
+// let success = false;
+// let attempt = 1;
+// do {
+//   console.log('trying.....', attempt);
+//   attempt++;
+// } while (!success && attempt <= 5);
+//------- 3 bar wrong pin dile block
+const readline = require('readline-sync');
+
+let pin = 1234;
+let attempt = 0;
+let input;
+
 do {
-  console.log('health remaining:', health);
-  health--;
-} while (health > 0);
+  input = Number(readline.question('Enter Your PIN: '));
+
+  if (input !== pin) {
+    console.log('Wrong PIN');
+  }
+
+  attempt++;
+} while (input !== pin && attempt < 3);
+
+if (input === pin) {
+  console.log('Login Success');
+} else {
+  console.log('Card Blocked');
+}
